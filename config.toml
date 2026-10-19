@@ -1,0 +1,26 @@
+# Réglages du bot des vidéos de présentation. Ce fichier se modifie à la main ; le bot le relit à chaque lancement.
+# Le token Telegram et l'identifiant du propriétaire ne sont PAS ici : ils sont dans le fichier .env.
+#
+# Ce que fait ce bot : dans Telegram, on lui donne le nom d'un launchpad ou d'un projet memecoin, une phrase
+# d'accroche, quelques points clés, un logo, une couleur et un style ; il renvoie une courte vidéo de présentation.
+# Il ne trade rien, ne lit aucune blockchain, ne détient aucune clé.
+
+[access]
+# true : TOUT LE MONDE peut se servir du bot. false : le propriétaire seulement (TELEGRAM_OWNER_ID dans .env).
+public = false
+
+# Combien de vidéos une même personne peut demander par heure (de 1 à 1000). Une vidéo occupe le PC 10 à 40
+# secondes, et elles se fabriquent une par une. Le propriétaire n'est pas limité.
+videos_per_hour = 6
+
+# Au-delà de ce nombre de vidéos en attente, le bot demande de revenir plus tard (de 1 à 100).
+queue_max = 5
+
+[video]
+# Le format proposé d'office à chaque nouveau projet (la personne peut le changer) :
+# "landscape" (16:9, pour X), "square" (1:1) ou "portrait" (9:16, pour TikTok / Reels).
+format = "landscape"
+
+# Le son d'office : "beat" (la musique fabriquée par le bot pour chaque style, sans droits d'auteur) ou "none"
+# (vidéo muette, pour mettre un son dans l'application). La personne peut aussi envoyer son propre son.
+music = "beat"

@@ -1,0 +1,10 @@
+# Secrets : le token du bot ne va JAMAIS dans Git
+.env
+# Ce que le bot fabrique et garde en marchant (projets, logos, sons, vidéos, journal)
+data/
+# L'environnement Python (recréé par start.bat)
+venv/
+__pycache__/
+*.pyc
+# Les vidéos d'exemple (53 Mo) : on les refait avec start.bat --demo
+exemples/

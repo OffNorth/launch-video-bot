@@ -1,0 +1,4 @@
+{"style": "product", "format": "landscape", "name": "Froggy Pad", "ticker": "$FROG",
+ "tagline": "Launch a coin for *anyone* on Solana",
+ "points": ["Fair launch, no presale", "Creators earn 1% of every trade", "Graduates to PumpSwap"],
+ "color": [92, 196, 110], "logo": "samples/logo-demo.png", "status": "soon", "link": "froggypad.fun", "music": "beat"}
